@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Samalla - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Visitor counter using localStorage (for demonstration)
+        let visits = localStorage.getItem('visitCount') || 0;
+        visits++;
+        localStorage.setItem('visitCount', visits);
+        window.onload = () => {
+            document.getElementById('counter').textContent = `Visitor Count: ${visits}`;
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Krishna Samalla</h1>
+            <p>Junior Engineer | Email: <a href="mailto:Krishnasamalla369@gmail.com">Krishnasamalla369@gmail.com</a> | Phone: 07738666369</p>
+            <p><a href="https://www.linkedin.com/in/krishna-samalla-20ba86253" target="_blank">LinkedIn Profile</a></p>
+        </header>
+        <section>
+            <h2>About Me</h2>
+            <p>I am an aspiring Cloud and DevOps Engineer with 2.8 years of IT experience...</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Oracle SQL</li>
+                <li>Linux Shell Scripting</li>
+                <li>Azure DevOps</li>
+                <li>Jenkins, Docker, Prometheus, Kubernetes...</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Work Experience</h2>
+            <h3>Cloud Engineer - NSEIT Ltd</h3>
+            <p>07/03/2022 - 01/09/2023 | Andheri, Mumbai</p>
+            <p>Executed multiple POCs on Azure infrastructure...</p>
+            <!-- Additional roles and details -->
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p>PGP in DevOps - University of Purdue (2024)</p>
+            <p>Bachelor of Science in IT - Mumbai University (2021)</p>
+        </section>
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Microsoft Azure Fundamentals (Az-900)</li>
+                <li>Microsoft Security, Compliance & Identity Fundamentals (Sc-900)</li>
+            </ul>
+        </section>
+        <footer>
+            <div id="counter"></div>
+        </footer>
+    </div>
+</body>
+</html>
